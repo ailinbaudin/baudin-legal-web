@@ -3,8 +3,8 @@ import React from "react";
 import { MessageSquare } from "lucide-react";
 
 const WhatsappButton: React.FC = () => {
-  const phoneNumber = "01138979208";
-  const whatsappMessage = "Hola, necesito asesoramiento jurídico.";
+  const phoneNumber = "5491138979208";
+  const whatsappMessage = "Hola, quiero hacer una consulta";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   
   return (

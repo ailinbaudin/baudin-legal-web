@@ -1,12 +1,13 @@
 
 import React from "react";
-import { Phone, MessageSquare } from "lucide-react";
+import { Phone, MessageSquare, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contacto: React.FC = () => {
-  const phoneNumber = "01138979208";
-  const whatsappMessage = "Hola, necesito asesoramiento jurídico.";
+  const phoneNumber = "5491138979208";
+  const whatsappMessage = "Hola, quiero hacer una consulta";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const email = "sandrapatriciabaudin@gmail.com";
   
   return (
     <section id="contacto" className="py-16 px-4">
@@ -23,6 +24,18 @@ const Contacto: React.FC = () => {
               <div>
                 <h3 className="font-montserrat font-semibold text-lg">Teléfono / WhatsApp</h3>
                 <p className="font-montserrat text-gray-600">011 3897 9208</p>
+              </div>
+            </div>
+            
+            <div className="mb-6 flex items-center">
+              <Mail className="text-legalGold mr-3" />
+              <div>
+                <h3 className="font-montserrat font-semibold text-lg">Email</h3>
+                <p className="font-montserrat text-gray-600">
+                  <a href={`mailto:${email}`} className="hover:underline">
+                    {email}
+                  </a>
+                </p>
               </div>
             </div>
             
