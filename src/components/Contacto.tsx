@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Phone, MessageSquare, WhatsApp } from "lucide-react";
+import { Phone, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contacto: React.FC = () => {
@@ -38,7 +38,7 @@ const Contacto: React.FC = () => {
               className="w-full bg-legalGold hover:bg-legalGold/90 text-black font-montserrat flex items-center justify-center gap-2"
               onClick={() => window.open(whatsappUrl, "_blank")}
             >
-              <WhatsApp size={20} />
+              <MessageSquare size={20} />
               <span>Contactar por WhatsApp</span>
             </Button>
           </div>

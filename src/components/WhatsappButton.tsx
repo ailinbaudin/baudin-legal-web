@@ -1,6 +1,6 @@
 
 import React from "react";
-import { WhatsApp } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const WhatsappButton: React.FC = () => {
   const phoneNumber = "01138979208";
@@ -15,7 +15,7 @@ const WhatsappButton: React.FC = () => {
       className="fixed bottom-6 right-6 z-50 bg-legalGold hover:bg-legalGold/90 text-black p-3 rounded-full shadow-lg transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-legalGold"
       aria-label="Contactar por WhatsApp"
     >
-      <WhatsApp size={28} />
+      <MessageSquare size={28} />
     </a>
   );
 };
